@@ -147,7 +147,8 @@ int main ()
 		printf("Escolha a opção desejada do menu:\n\n"); //Informando o usuário
 		printf("\t1 - Registrar nomes\n"); //Coletando informações dos usuários
 		printf("\t2 - Consultar nomes\n"); //Coletando informações dos usuários
-		printf("\t3 - Deletar nomes\n\n"); //Coletando informações dos usuários
+		printf("\t3 - Deletar nomes\n"); //Coletando informações dos usuários
+		printf("\t4 - Sair do menu\n\n");
 		printf("Opção: "); //Fim do menu
 		
 		scanf ("%d",&opcao); //Armazenando a escolha do usuário (%d Só permite entrada de um número inteiro com sinal no formato decima)
@@ -167,6 +168,11 @@ int main ()
 			case 3:	
 			deletar(); //Esta chamando a int deletar
 			break; //Fecha o switch
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;
 			
 			default:
 			printf("Essa opção não está disponivel!\n"); //Alertando o usuário
